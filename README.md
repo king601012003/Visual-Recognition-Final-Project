@@ -61,6 +61,7 @@ efficientnet | 1x RTX 2080Ti | 288 x 288 | 50 | 6 hours
 
 
 ## Testing
+[Pretrain weight](https://drive.google.com/file/d/1-hFy7fqNaAebOEdYS0bwNdrt9WRWRSru/view?usp=sharing)
 To test models:
 
 Open the **model.py** with your own IDE and directly run it. 

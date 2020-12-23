@@ -68,7 +68,7 @@ efficientnet | 1x RTX 2080Ti | 288 x 288 | 50 | 6 hours
 To test models:
 
 Open the **model.py** with your own IDE and directly run it. 
-There are several hyperparameters in the code **156 ~ 163**.
+There are several hyperparameters in the code **276 ~ 295**.
 
 *  model_state = "eval" 
 *  batch_size = 25

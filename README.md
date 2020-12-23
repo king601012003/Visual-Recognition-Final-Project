@@ -21,8 +21,8 @@ To reproduct my submission without retrainig, do the following steps:
 this code was trained and tested with Python 3.6.10 and Pytorch 1.3.0 (Torchvision 0.4.1) on Ubuntu 18.04
 
 ```
-conda create -n hpa python=3.6
-conda activate hpa
+conda create -n finalproject python=3.6
+conda activate finalproject
 pip install -r requirements.txt
 ```
 
@@ -32,28 +32,32 @@ cs-t0828-2020-hw1
 ├── HW1
 │   ├── data
 │   │   ├── Put all images here
-│   ├── train_img.csv
-│   ├── train_label.csv
-│   ├── test_img.csv
-│   ├── test_label.csv
+│   ├── train.csv
+│   ├── test.csv
+│   ├── 2015_train.csv
 
 ```
-I seperate the original training data (11185 images) into two part. One for training (10000 images) and one for evaluating(1185 images). 
+I seperate the original training data (38788 images) into two part. One for training (37626 images) and one for evaluating(1162 images). 
 
 ## Training
 To train models:
 
 Open the **model.py** with your own IDE and directly run it. 
-There are several hyperparameters in the code **156 ~ 163**.
+There are several hyperparameters in the code **276 ~ 295**.
 
 The expected training times are:
 Model | GPUs | Image size | Training Epochs | Training Time
 ------------ | ------------- | ------------- | ------------- | -------------
-efficientnet | 1x RTX 2080Ti | 224 x 224 | 100 | 180 minutes
+efficientnet | 1x RTX 2080Ti | 288 x 288 | 50 | 6 hours
 
 *  model_state = "train"
-*  batch_size = 25
-*  network = 8
+*  batch_size = 16
+*  network = 5
+*  fc_out_num = 6
+*  optimizers = 1
+*  initial_lr = 1e-4
+*  dynamic_lr = True
+
 
 
 ## Testing
@@ -67,7 +71,9 @@ There are several hyperparameters in the code **156 ~ 163**.
 *  network = 8
 *  ckpt_path = "/PATH/TO/YOUR/WEIGHT/FILE"
 *  model_weight = ""epoch_XX.pkl""
+*  fc_out_num = 6
+*  optimizers = 1
+*  initial_lr = 1e-4
 
 ## Reference
 1. [Efficientnet](https://github.com/lukemelas/EfficientNet-PyTorch).
-2. [Mix_up](https://github.com/facebookresearch/mixup-cifar10)

@@ -61,7 +61,10 @@ efficientnet | 1x RTX 2080Ti | 288 x 288 | 50 | 6 hours
 
 
 ## Testing
+
 [Pretrain weight](https://drive.google.com/file/d/1-hFy7fqNaAebOEdYS0bwNdrt9WRWRSru/view?usp=sharing)
+
+
 To test models:
 
 Open the **model.py** with your own IDE and directly run it. 
@@ -78,3 +81,4 @@ There are several hyperparameters in the code **156 ~ 163**.
 
 ## Reference
 1. [Efficientnet](https://github.com/lukemelas/EfficientNet-PyTorch).
+2. [Kaggle Discussion](https://www.kaggle.com/c/aptos2019-blindness-detection/discussion).

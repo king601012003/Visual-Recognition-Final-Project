@@ -31,7 +31,7 @@ pip install -r requirements.txt
 cs-t0828-2020-Final
 ├── Final
 │   ├── train_images
-│   │   ├── Put all images here
+│   │   ├── Put all images here (2015+2019)
 │   ├── train.csv
 │   ├── test.csv
 │   ├── 2015_train.csv

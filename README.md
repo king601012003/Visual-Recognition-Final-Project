@@ -28,8 +28,8 @@ pip install -r requirements.txt
 
 ## Dataset Preparation
 ```
-cs-t0828-2020-hw1
-├── HW1
+cs-t0828-2020-Final
+├── Final
 │   ├── data
 │   │   ├── Put all images here
 │   ├── train.csv
